@@ -206,3 +206,6 @@ make_block_tile_pair_2p function addr,flx,fly,pal,pri,((make_block_tile_2p(addr,
 
 SonicMappingsVer = 2
 	include "SpritePiece.asm"
+SonicObjectVer = 2
+SonicRingVer = 2
+	include "ObjectEntry.asm"

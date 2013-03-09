@@ -29827,8 +29827,8 @@ loc_177FA:
 	move.w	#SndID_LargeBumper,d0
 	jmp	(PlaySound).l
 ; ===========================================================================
-SpecialCNZBumpers_Act1:	BINCLUDE	"level/objects/CNZ 1 bumpers.bin"	; byte_1781A
-SpecialCNZBumpers_Act2:	BINCLUDE	"level/objects/CNZ 2 bumpers.bin"	; byte_1795E
+SpecialCNZBumpers_Act1:	include	"level/objects/CNZ 1 bumpers.asm"	; byte_1781A
+SpecialCNZBumpers_Act2:	include	"level/objects/CNZ 2 bumpers.asm"	; byte_1795E
 ; ===========================================================================
 	nop
 
@@ -30575,12 +30575,12 @@ return_18028:
 ; CNZ act 1 object layout for 2-player mode (various objects were deleted)
 ;---------------------------------------------------------------------------------------
 ; byte_1802A;
-Objects_CNZ1_2P:	BINCLUDE	"level/objects/CNZ_1_2P.bin"
+Objects_CNZ1_2P:	include	"level/objects/CNZ_1_2P.asm"
 ;---------------------------------------------------------------------------------------
 ; CNZ act 2 object layout for 2-player mode (various objects were deleted)
 ;---------------------------------------------------------------------------------------
 ; byte_18492:
-Objects_CNZ2_2P:	BINCLUDE	"level/objects/CNZ_2_2P.bin"
+Objects_CNZ2_2P:	include	"level/objects/CNZ_2_2P.asm"
 
 
 
@@ -86595,40 +86595,40 @@ Off_Rings: zoneOrderedOffsetTable 2,2
 	zoneOffsetTableEntry.w  Rings_SCZ_2	; 33
     zoneTableEnd
 
-Rings_EHZ_1:	BINCLUDE	"level/rings/EHZ_1.bin"
-Rings_EHZ_2:	BINCLUDE	"level/rings/EHZ_2.bin"
-Rings_Lev1_1:	BINCLUDE	"level/rings/01_1.bin"
-Rings_Lev1_2:	BINCLUDE	"level/rings/01_2.bin"
-Rings_Lev2_1:	BINCLUDE	"level/rings/02_1.bin"
-Rings_Lev2_2:	BINCLUDE	"level/rings/02_2.bin"
-Rings_Lev3_1:	BINCLUDE	"level/rings/03_1.bin"
-Rings_Lev3_2:	BINCLUDE	"level/rings/03_2.bin"
-Rings_MTZ_1:	BINCLUDE	"level/rings/MTZ_1.bin"
-Rings_MTZ_2:	BINCLUDE	"level/rings/MTZ_2.bin"
-Rings_MTZ_3:	BINCLUDE	"level/rings/MTZ_3.bin"
-Rings_MTZ_4:	BINCLUDE	"level/rings/MTZ_4.bin"
-Rings_HTZ_1:	BINCLUDE	"level/rings/HTZ_1.bin"
-Rings_HTZ_2:	BINCLUDE	"level/rings/HTZ_2.bin"
-Rings_HPZ_1:	BINCLUDE	"level/rings/HPZ_1.bin"
-Rings_HPZ_2:	BINCLUDE	"level/rings/HPZ_2.bin"
-Rings_Lev9_1:	BINCLUDE	"level/rings/09_1.bin"
-Rings_Lev9_2:	BINCLUDE	"level/rings/09_2.bin"
-Rings_OOZ_1:	BINCLUDE	"level/rings/OOZ_1.bin"
-Rings_OOZ_2:	BINCLUDE	"level/rings/OOZ_2.bin"
-Rings_MCZ_1:	BINCLUDE	"level/rings/MCZ_1.bin"
-Rings_MCZ_2:	BINCLUDE	"level/rings/MCZ_2.bin"
-Rings_CNZ_1:	BINCLUDE	"level/rings/CNZ_1.bin"
-Rings_CNZ_2:	BINCLUDE	"level/rings/CNZ_2.bin"
-Rings_CPZ_1:	BINCLUDE	"level/rings/CPZ_1.bin"
-Rings_CPZ_2:	BINCLUDE	"level/rings/CPZ_2.bin"
-Rings_DEZ_1:	BINCLUDE	"level/rings/DEZ_1.bin"
-Rings_DEZ_2:	BINCLUDE	"level/rings/DEZ_2.bin"
-Rings_WFZ_1:	BINCLUDE	"level/rings/WFZ_1.bin"
-Rings_WFZ_2:	BINCLUDE	"level/rings/WFZ_2.bin"
-Rings_ARZ_1:	BINCLUDE	"level/rings/ARZ_1.bin"
-Rings_ARZ_2:	BINCLUDE	"level/rings/ARZ_2.bin"
-Rings_SCZ_1:	BINCLUDE	"level/rings/SCZ_1.bin"
-Rings_SCZ_2:	BINCLUDE	"level/rings/SCZ_2.bin"
+Rings_EHZ_1:	include	"level/rings/EHZ_1.asm"
+Rings_EHZ_2:	include	"level/rings/EHZ_2.asm"
+Rings_Lev1_1:	include	"level/rings/01_1.asm"
+Rings_Lev1_2:	include	"level/rings/01_2.asm"
+Rings_Lev2_1:	include	"level/rings/02_1.asm"
+Rings_Lev2_2:	include	"level/rings/02_2.asm"
+Rings_Lev3_1:	include	"level/rings/03_1.asm"
+Rings_Lev3_2:	include	"level/rings/03_2.asm"
+Rings_MTZ_1:	include	"level/rings/MTZ_1.asm"
+Rings_MTZ_2:	include	"level/rings/MTZ_2.asm"
+Rings_MTZ_3:	include	"level/rings/MTZ_3.asm"
+Rings_MTZ_4:	include	"level/rings/MTZ_4.asm"
+Rings_HTZ_1:	include	"level/rings/HTZ_1.asm"
+Rings_HTZ_2:	include	"level/rings/HTZ_2.asm"
+Rings_HPZ_1:	include	"level/rings/HPZ_1.asm"
+Rings_HPZ_2:	include	"level/rings/HPZ_2.asm"
+Rings_Lev9_1:	include	"level/rings/09_1.asm"
+Rings_Lev9_2:	include	"level/rings/09_2.asm"
+Rings_OOZ_1:	include	"level/rings/OOZ_1.asm"
+Rings_OOZ_2:	include	"level/rings/OOZ_2.asm"
+Rings_MCZ_1:	include	"level/rings/MCZ_1.asm"
+Rings_MCZ_2:	include	"level/rings/MCZ_2.asm"
+Rings_CNZ_1:	include	"level/rings/CNZ_1.asm"
+Rings_CNZ_2:	include	"level/rings/CNZ_2.asm"
+Rings_CPZ_1:	include	"level/rings/CPZ_1.asm"
+Rings_CPZ_2:	include	"level/rings/CPZ_2.asm"
+Rings_DEZ_1:	include	"level/rings/DEZ_1.asm"
+Rings_DEZ_2:	include	"level/rings/DEZ_2.asm"
+Rings_WFZ_1:	include	"level/rings/WFZ_1.asm"
+Rings_WFZ_2:	include	"level/rings/WFZ_2.asm"
+Rings_ARZ_1:	include	"level/rings/ARZ_1.asm"
+Rings_ARZ_2:	include	"level/rings/ARZ_2.asm"
+Rings_SCZ_1:	include	"level/rings/SCZ_1.asm"
+Rings_SCZ_2:	include	"level/rings/SCZ_2.asm"
 
 ; --------------------------------------------------------------------------------------
 ; Filler (free space) (unnecessary; could be replaced with "even")
@@ -86676,45 +86676,45 @@ Off_Objects: zoneOrderedOffsetTable 2,2
     zoneTableEnd
 
 ;Objects_Null1: ; looks unused, but it's really not. there must be a null entry first or you will get crashes. (try going left from second screen of EHZ1)
-		BINCLUDE	"level/objects/Null_1.bin"
+		include	"level/objects/Null_1.asm"
 
-Objects_EHZ_1:	BINCLUDE	"level/objects/EHZ_1.bin"
-Objects_EHZ_2:	BINCLUDE	"level/objects/EHZ_2.bin"
-Objects_MTZ_1:	BINCLUDE	"level/objects/MTZ_1.bin"
-Objects_MTZ_2:	BINCLUDE	"level/objects/MTZ_2.bin"
-Objects_MTZ_3:	BINCLUDE	"level/objects/MTZ_3.bin"
-Objects_WFZ_1:	BINCLUDE	"level/objects/WFZ_1.bin"
-Objects_WFZ_2:	BINCLUDE	"level/objects/WFZ_2.bin"
-Objects_HTZ_1:	BINCLUDE	"level/objects/HTZ_1.bin"
-Objects_HTZ_2:	BINCLUDE	"level/objects/HTZ_2.bin"
-Objects_HPZ_1:	BINCLUDE	"level/objects/HPZ_1.bin"
-Objects_HPZ_2:	BINCLUDE	"level/objects/HPZ_2.bin"
+Objects_EHZ_1:	include	"level/objects/EHZ_1.asm"
+Objects_EHZ_2:	include	"level/objects/EHZ_2.asm"
+Objects_MTZ_1:	include	"level/objects/MTZ_1.asm"
+Objects_MTZ_2:	include	"level/objects/MTZ_2.asm"
+Objects_MTZ_3:	include	"level/objects/MTZ_3.asm"
+Objects_WFZ_1:	include	"level/objects/WFZ_1.asm"
+Objects_WFZ_2:	include	"level/objects/WFZ_2.asm"
+Objects_HTZ_1:	include	"level/objects/HTZ_1.asm"
+Objects_HTZ_2:	include	"level/objects/HTZ_2.asm"
+Objects_HPZ_1:	include	"level/objects/HPZ_1.asm"
+Objects_HPZ_2:	include	"level/objects/HPZ_2.asm"
 
 ;Objects_Null2: ; unused
-		BINCLUDE	"level/objects/Null_2.bin"
+		include	"level/objects/Null_2.asm"
 
-Objects_OOZ_1:	BINCLUDE	"level/objects/OOZ_1.bin"
-Objects_OOZ_2:	BINCLUDE	"level/objects/OOZ_2.bin"
-Objects_MCZ_1:	BINCLUDE	"level/objects/MCZ_1.bin"
-Objects_MCZ_2:	BINCLUDE	"level/objects/MCZ_2.bin"
-Objects_CNZ_1:	BINCLUDE	"level/objects/CNZ_1.bin"
-Objects_CNZ_2:	BINCLUDE	"level/objects/CNZ_2.bin"
-Objects_CPZ_1:	BINCLUDE	"level/objects/CPZ_1.bin"
-Objects_CPZ_2:	BINCLUDE	"level/objects/CPZ_2.bin"
-Objects_DEZ_1:	BINCLUDE	"level/objects/DEZ_1.bin"
-Objects_DEZ_2:	BINCLUDE	"level/objects/DEZ_2.bin"
-Objects_ARZ_1:	BINCLUDE	"level/objects/ARZ_1.bin"
-Objects_ARZ_2:	BINCLUDE	"level/objects/ARZ_2.bin"
-Objects_SCZ_1:	BINCLUDE	"level/objects/SCZ_1.bin"
-Objects_SCZ_2:	BINCLUDE	"level/objects/SCZ_2.bin"
-Objects_Null3:	BINCLUDE	"level/objects/Null_3.bin"
+Objects_OOZ_1:	include	"level/objects/OOZ_1.asm"
+Objects_OOZ_2:	include	"level/objects/OOZ_2.asm"
+Objects_MCZ_1:	include	"level/objects/MCZ_1.asm"
+Objects_MCZ_2:	include	"level/objects/MCZ_2.asm"
+Objects_CNZ_1:	include	"level/objects/CNZ_1.asm"
+Objects_CNZ_2:	include	"level/objects/CNZ_2.asm"
+Objects_CPZ_1:	include	"level/objects/CPZ_1.asm"
+Objects_CPZ_2:	include	"level/objects/CPZ_2.asm"
+Objects_DEZ_1:	include	"level/objects/DEZ_1.asm"
+Objects_DEZ_2:	include	"level/objects/DEZ_2.asm"
+Objects_ARZ_1:	include	"level/objects/ARZ_1.asm"
+Objects_ARZ_2:	include	"level/objects/ARZ_2.asm"
+Objects_SCZ_1:	include	"level/objects/SCZ_1.asm"
+Objects_SCZ_2:	include	"level/objects/SCZ_2.asm"
+Objects_Null3:	include	"level/objects/Null_3.asm"
 
 ;Objects_Null4: ; unused
-		BINCLUDE	"level/objects/Null_4.bin"
+		include	"level/objects/Null_4.asm"
 ;Objects_Null5: ; unused
-		BINCLUDE	"level/objects/Null_5.bin"
+		include	"level/objects/Null_5.asm"
 ;Objects_Null6: ; unused
-		BINCLUDE	"level/objects/Null_6.bin"
+		include	"level/objects/Null_6.asm"
 
 ; --------------------------------------------------------------------------------------
 ; Filler (free space) (unnecessary; could be replaced with "even")
